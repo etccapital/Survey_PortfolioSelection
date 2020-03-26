@@ -23,7 +23,7 @@ class PickleMixin(object):
         with open(filename, 'rb') as f:
             return pickle.load(f)
 
-
+# 算法结果
 class AlgoResult(PickleMixin):
     """ Results returned by algo's run method. The class containts useful
     metrics such as sharpe ratio, mean return, drawdowns, ... and also
@@ -138,6 +138,7 @@ class AlgoResult(PickleMixin):
         return tools.sharpe(self.r_log, rf_rate=self.rf_rate, freq=self.freq())
 
     @property
+    # 信息比例
     def information(self):
         """ Information ratio benchmarked against uniform CRP portfolio. """
         s = self.X.mean(axis=1)
