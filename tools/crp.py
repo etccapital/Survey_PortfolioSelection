@@ -42,6 +42,8 @@ class CRP(Algo):
         """ Plot performance graph for all CRPs (Constant Rebalanced Portfolios).
         :param data: Stock prices.
         :param show_3d: Show CRPs on a 3-simplex, works only for 3 assets.
+        
+        简易performance绘图模型，仅用于3种特定资产回报情况。
         """
         def _crp(data):
             B = list(tools.simplex_mesh(2, 100))
