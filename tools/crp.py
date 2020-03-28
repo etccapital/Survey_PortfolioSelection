@@ -7,7 +7,9 @@ import matplotlib.pyplot as plt
 
 class CRP(Algo):
     """ Constant rebalanced portfolio = use fixed weights all the time. Uniform weights
-    are commonly used as a benchmark.
+    are commonly used as a benchmark. 
+    
+    持续调平资产组合，随时使用固定配重，作为其余算法的对标benchmark。
     Reference:
         T. Cover. Universal Portfolios, 1991.
         http://www-isl.stanford.edu/~cover/papers/paper93.pdf
