@@ -6,6 +6,7 @@ from scipy import stats
 
 
 class AssetFilter(object):
+    # 资产过滤器
 
     def __init__(self, window=None, threshold=0.3):
         self.window = window
