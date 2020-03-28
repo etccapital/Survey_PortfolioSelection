@@ -49,14 +49,14 @@ class Algo(object):
 
     def init_step(self, X):
         """ Called before step method. Use to initialize persistent variables.
-        :param X: Entire stock returns history.
+        :param X: Entire stock returns history. 
         """
         pass
 
     def step(self, x, last_b, history):
         """ Calculate new portfolio weights. If history parameter is omited, step
         method gets passed just parameters `x` and `last_b`. This significantly
-        increases performance.
+        increases performance.计算新资产组合配比
         :param x: Last returns.
         :param last_b: Last weights.
         :param history: All returns up to now. You can omit this parameter to increase
@@ -136,10 +136,10 @@ class Algo(object):
         else:
             P = S
 
-        # convert prices to proper format
+        # 将价格转换为正确格式
         X = self._convert_prices(P, self.PRICE_TYPE, self.REPLACE_MISSING)
 
-        # get weights
+        # 获取配重
         if n_jobs == 1:
             try:
                 B = self.weights(X, log_progress=log_progress)
