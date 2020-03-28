@@ -193,7 +193,8 @@ class AlgoResult(PickleMixin):
 
     @property
     def max_drawdown(self):
-        ''' Returns highest drawdown in percentage. '''
+        ''' 最大回撤，比例
+        Returns highest drawdown in percentage. '''
         x = self.equity
         return max(1. - x / x.cummax())
 
