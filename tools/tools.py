@@ -74,6 +74,8 @@ def quickrun(algo, data=None, n=1000, **kwargs):
 
 def random_portfolio(n, k, mu=0., sd=0.01, corr=None, dt=1., nan_pct=0.):
     """ Generate asset prices assuming multivariate geometric Brownian motion.
+    以多变量几何布朗运动为基础生成资产价格。
+    
     :param n: Number of time steps.
     :param k: Number of assets.
     :param mu: Drift parameter. Can be scalar or vector. Default is 0.
