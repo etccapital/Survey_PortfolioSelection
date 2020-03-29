@@ -6,7 +6,7 @@ from scipy import stats
 
 
 class AssetFilter(object):
-    # 资产过滤器
+    # 以回报增长率，夏普比率为标准的资产过滤器
 
     def __init__(self, window=None, threshold=0.3):
         self.window = window
