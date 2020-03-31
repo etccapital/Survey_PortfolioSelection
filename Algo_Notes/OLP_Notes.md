@@ -10,7 +10,8 @@ few open-source toolkits exist for on-line portfolio selection, primarily due to
 nature of financial industry. Consequently, it is difficult for researchers to evaluate new algorithms
 for comprehensive comparisons with existing ones.
 
-**1. INTRODUCTION** /n
+**1. INTRODUCTION** 
+
 Portfolio selection, aiming to optimize the allocation of wealth across a set of assets, is a fundamental research problem in computational finance and a practical engineering task in financial
 engineering. There are two major schools for investigating this problem, that is, the Mean Variance Theory [Markowitz 1952; Markowitz 1959; Markowitz et al. 2000] mainly from the finance
 community and Capital Growth Theory [Kelly 1956; Hakansson and Ziemba 1995] primarily originated from information theory. The Mean Variance Theory, widely known in asset management
@@ -19,3 +20,5 @@ return (mean) and risk (variance), which typically determines the optimal portfo
 investor’s risk-return profile. On the other hand, Capital Growth Theory focuses on multiple-period
 or sequential portfolio selection, aiming to maximize the portfolio’s expected growth rate, or expected log return. While both theories solve the task of portfolio selection, the latter is fitted to the
 “online” scenario, which naturally consists of multiple periods and is the focus of this article.
+
+Online Portfolio Selection，旨在优化穿越不同时间区域和资产类型的财富分配
