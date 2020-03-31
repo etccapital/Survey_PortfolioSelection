@@ -10,7 +10,7 @@ few open-source toolkits exist for on-line portfolio selection, primarily due to
 nature of financial industry. Consequently, it is difficult for researchers to evaluate new algorithms
 for comprehensive comparisons with existing ones.
 
-**1. INTRODUCTION** \n
+**1. INTRODUCTION** /n
 Portfolio selection, aiming to optimize the allocation of wealth across a set of assets, is a fundamental research problem in computational finance and a practical engineering task in financial
 engineering. There are two major schools for investigating this problem, that is, the Mean Variance Theory [Markowitz 1952; Markowitz 1959; Markowitz et al. 2000] mainly from the finance
 community and Capital Growth Theory [Kelly 1956; Hakansson and Ziemba 1995] primarily originated from information theory. The Mean Variance Theory, widely known in asset management
