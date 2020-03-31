@@ -21,4 +21,4 @@ investor’s risk-return profile. On the other hand, Capital Growth Theory focus
 or sequential portfolio selection, aiming to maximize the portfolio’s expected growth rate, or expected log return. While both theories solve the task of portfolio selection, the latter is fitted to the
 “online” scenario, which naturally consists of multiple periods and is the focus of this article.
 
-Online Portfolio Selection，旨在优化穿越不同时间区域和资产类型的财富分配
+线上资产组合选择，旨在优化穿越不同时间区域和资产类型的财富分配
