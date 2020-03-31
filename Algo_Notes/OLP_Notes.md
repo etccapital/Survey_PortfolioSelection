@@ -1,4 +1,4 @@
-	In recent years, machine learning has been applied to various applications in finance (Gy¨orfi et al.,
+In recent years, machine learning has been applied to various applications in finance (Gy¨orfi et al.,
 2012), including On-line Portfolio Selection, which aims to sequentially allocate capital among a
 set of assets, such that the investment return can be maximized in the long run (Kelly, 1956). It
 has attracted increasing attention from both academia and industry, and several machine learning
@@ -10,7 +10,7 @@ few open-source toolkits exist for on-line portfolio selection, primarily due to
 nature of financial industry. Consequently, it is difficult for researchers to evaluate new algorithms
 for comprehensive comparisons with existing ones.
 
-**1. INTRODUCTION**
+**1. INTRODUCTION** \\
 Portfolio selection, aiming to optimize the allocation of wealth across a set of assets, is a fundamental research problem in computational finance and a practical engineering task in financial
 engineering. There are two major schools for investigating this problem, that is, the Mean Variance Theory [Markowitz 1952; Markowitz 1959; Markowitz et al. 2000] mainly from the finance
 community and Capital Growth Theory [Kelly 1956; Hakansson and Ziemba 1995] primarily originated from information theory. The Mean Variance Theory, widely known in asset management
