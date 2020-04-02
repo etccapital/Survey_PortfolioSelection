@@ -39,6 +39,15 @@ Universal Portfolio, Exponential Gradient, Follow the Leader, Follow the Regular
 
 3. 跟随败者*Follow the Loser*：这种策略的思路与上一策略相反，基本假设是现阶段的败者有机会反弹，并反超其他资产实现收益。如此，这种策略的特点是将outperformed的资产调至underperformed的资产中。
 
-Anti-correlation, Passive Aggressive Mean Reversion, Confidence Weighted Mean Reversion, Online Moving Average Reversion
+Anti-correlation, Passive Aggressive Mean Reversion, Confidence Weighted Mean Reversion, Online Moving Average Reversion.
+
+4. 规律套利*Patterns Arbitrage*：这种套利策略的基本假设与EMH相反，相信市场并非完全随机漫步，存在必然有迹可循的客观规律。如此，并非完全随机的市场时间序列就可以作为寻找规律的数据集。技术分析的根本思路，其实也与此类似。
+
+5. 荟萃学习算法*Meta Learning Algorithm*：
+在机器学习中，学习，一般指代对特定代价函数的优化，我们最大化贝叶斯模型的似然估计，最小化神经网络中的平均方差，或是最大化增强学习中的期望回报。荟萃学习，则是优化这种机器学习进程的策略。
+
+Aggregating Algorithms，Fast Universalization, Online Gradient Updates, Follow the Leading History.
+
+
 
 
