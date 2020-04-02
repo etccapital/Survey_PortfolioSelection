@@ -1,4 +1,4 @@
-**Principle of Alpha Design 框架 Victor**
+**Principle of Alpha Design, 量化设计原则 by Victor Xiao**
 
 “Man is a creature that became successful because he was able to make sense of his environment and develop rules more effectively than his natural competitors could. “
 
