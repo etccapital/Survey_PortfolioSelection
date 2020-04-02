@@ -27,5 +27,18 @@ Alpha在金融领域，基本定义为阿尔法系数，一般为基金绝对回
 
 如此，当我们确定了三轴的应用区域，指标，交易频次和数据集后，一个基本的策略思路就形成了。
 
+IV. **一些经典策略**
+
+1. 基准策略*Benchmark*: 是一种追求长期大盘或是获取大盘自筛选性收益形成的算法类型。这种策略的基本假设就是市场有效假说，且大盘长期向上。
+
+Buy and hold, Best Stock, Constant Rebalanced Portfolio
+
+2. 跟随赢家*Follow the Winner*：如名所指，旨在不断追随大盘领先者以获取收益的方法。是一种将仓位配比由underperformed资产调至outperformed的资产，以保证长期持有赢家的策略。这种策略的基本假设，是赢者稳赢。
+
+Universal Portfolio, Exponential Gradient, Follow the Leader, Follow the Regularized Leader, Aggregate-Type Leader
+
+3. 跟随败者*Follow the Loser*：这种策略的思路与上一策略相反，基本假设是现阶段的败者有机会反弹，并反超其他资产实现收益。如此，这种策略的特点是将outperformed的资产调至underperformed的资产中。
+
+Anti-correlation, Passive Aggressive Mean Reversion, Confidence Weighted Mean Reversion, Online Moving Average Reversion
 
 
