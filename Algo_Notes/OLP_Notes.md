@@ -27,3 +27,23 @@ or sequential portfolio selection, aiming to maximize the portfolio’s expected
 
 虽然这两种理论都解决了投资组合选择的任务，但是对于我们追求的迭代性的投资策略来说，后者更适用这种本质便是连续性决策问题的基本环境。
 
+Online portfolio selection, which sequentially selects a portfolio over a set of assets in order to
+achieve certain targets, is a natural and important task for asset portfolio management. Aiming to
+maximize the cumulative wealth, several categories of algorithms have been proposed to solve this
+task. One category of algorithms, termed “Follow-the-Winner”, tries to asymptotically achieve the
+same growth rate (expected log return) as that of an optimal strategy, which is often based on the
+Capital Growth Theory. The second category, named “Follow-the-Loser”, transfers the wealth from
+winning assets to losers, which seems contradictory to the common sense but empirically often
+achieves significantly better performance. Finally, the third category, termed “Pattern-Matching”
+based approach, tries to predict the next market distribution based on a sample of historical data and
+explicitly optimizes the portfolio based on the sampled distribution. While the above three categories
+are focused on a single strategy (class), there are also some other strategies that focus on combining
+multiple strategies (classes), termed as “Meta-Learning Algorithms”. As a brief summary, Table I
+outlines the list of main algorithms and corresponding references.
+
+This article provides a comprehensive survey of online portfolio selection algorithms belonging
+to the above categories. To the best of our knowledge, this is the first survey that includes the above
+three categories and the meta-learning algorithms as well. Moreover, we are the first to explicitly
+discuss the connection between the online portfolio selection algorithms and Capital Growth Theory, and illustrate their underlying trading ideas. In the following sections, we also clarify the scope
+of this article and discuss some related existing surveys in the literature.
+
