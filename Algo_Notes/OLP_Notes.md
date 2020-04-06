@@ -41,6 +41,9 @@ are focused on a single strategy (class), there are also some other strategies t
 multiple strategies (classes), termed as “Meta-Learning Algorithms”. As a brief summary, Table I
 outlines the list of main algorithms and corresponding references.
 
+通过连续性选择资产池以实现特定风险-回报目标，线上资产组合成为了资产组合管理的自然和核心人物。为了解决这个问题，几大种类的算法
+相继被提出。例如，最经典的“跟随赢家”策略，以资产理论为基石，旨在最大限度靠近大盘中的最优策略的收益增长率（log return）。
+
 This article provides a comprehensive survey of online portfolio selection algorithms belonging
 to the above categories. To the best of our knowledge, this is the first survey that includes the above
 three categories and the meta-learning algorithms as well. Moreover, we are the first to explicitly
