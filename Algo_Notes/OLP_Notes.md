@@ -51,3 +51,54 @@ of this article and discuss some related existing surveys in the literature.
 
 此文章将在上述策略领域提供一个完整的线上资产组合选择算法回顾。
 
+
+**1.1. Scope**
+
+In this survey, we focus on discussing the empirical motivating ideas of the online portfolio
+selection algorithms, while only skimming theoretical aspects (such as competitive
+analysis by El-Yaniv [1998] and Borodin et al. [2000] and asymptotical convergence analysis
+by Gy¨orfi et al. [2012]). Moreover, various other related issues and topics are excluded from this
+survey, as discussed below.
+
+First of all, it is important to mention that the “Portfolio Selection” task in our
+survey differs from a great body of financial engineering studies [Kimoto et al. 1993;
+ACM Computing Surveys, Vol. V, No. N, Article A, Publication date: December YEAR.
+Online Portfolio Selection: A Survey A:3
+Merhav and Feder 1998; Cao and Tay 2003; Lu et al. 2009; Dhar 2011; Huang et al. 2011], which
+attempted to forecast financial time series by applying machine learning techniques and
+conduct single stock trading [Katz and McCormick 2000; Koolen and Vovk 2012], such as reinforcement
+learning [Moody et al. 1998; Moody and Saffell 2001; O et al. 2002], neural networks
+[Kimoto et al. 1993; Dempster et al. 2001], genetic algorithms [Mahfoud and Mani 1996;
+Allen and Karjalainen 1999; Madziuk and Jaruszewicz 2011], decision trees [Tsang et al. 2004],
+and support vector machines [Tay and Cao 2002; Cao and Tay 2003; Lu et al. 2009], boosting
+and expert weighting [Creamer 2007; Creamer and Freund 2007; Creamer and Freund 2010;
+Creamer 2012], etc. The key difference between these existing works and subject area of this survey
+is that their learning goal is to make explicit predictions of future prices/trends and to trade on
+a single asset [Borodin et al. 2000, Section 6], while our goal is to directly optimize the allocation
+among a set of assets.
+
+Second, this survey emphasizes the importance of “online” decision for portfolio selection,
+meaning that related market information arrives sequentially and the allocation
+decision must be made immediately. Due to the sequential (online) nature of this task,
+we mainly focus on the survey of multi-period/sequential portfolio selection work, in
+which the portfolio is rebalanced to a specified allocation at the end of each trading period
+[Cover 1991], and the goal typically is to maximize the expected log return over a sequence
+of trading periods. We note that these work can be connected to the Capital Growth Theory
+[Kelly 1956], stemmed from the seminal paper of Kelly [1956] and further developed
+by Breiman[1960; 1961], Hakansson[1970; 1971], Thorp[1969; 1971], Bell and Cover [1980],
+Finkelstein and Whitley [1981], Algoet and Cover [1988], Barron and Cover [1988],
+MacLean et al. [1992], MacLean and Ziemba [1999], Ziemba and Ziemba [2007],
+Maclean et al. [2010], etc. It has been successfully applied to gambling [Thorp 1962;
+Thorp 1969; Thorp 1997], sports betting [Hausch et al. 1981; Ziemba and Hausch 1984;
+Thorp 1997; Ziemba and Hausch 2008], and portfolio investment [Thorp and Kassouf 1967;
+Rotando and Thorp 1992; Ziemba 2005]. We thus exclude the studies related to the Mean Variance
+portfolio theory [Markowitz 1952; Markowitz 1959], which were typically developed for singleperiod
+(batch) portfolio selection (except some extensions [Li and Ng 2000; Dai et al. 2010]).
+
+Finally, this article focuses on surveying the algorithmic aspects and providing a structural understanding
+of the existing online portfolio selection strategies. To prevent loss of focus, we will
+not dig into theoretical details. In the literature, there is a large body of related work for the theory
+[MacLean et al. 2011]. Interested researchers can explore the details of the theory from two exhaustive
+surveys [Thorp 1997; Maclean and Ziemba 2008], and its history from Poundstone [2005]
+and Gy¨orfi et al. [2012, Chapter 1]
+
