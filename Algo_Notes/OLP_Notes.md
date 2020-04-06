@@ -49,3 +49,5 @@ three categories and the meta-learning algorithms as well. Moreover, we are the 
 discuss the connection between the online portfolio selection algorithms and Capital Growth Theory, and illustrate their underlying trading ideas. In the following sections, we also clarify the scope
 of this article and discuss some related existing surveys in the literature.
 
+此文章将在上述策略领域提供一个完整的线上资产组合选择算法回顾。
+
