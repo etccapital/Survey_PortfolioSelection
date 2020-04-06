@@ -21,11 +21,7 @@ investor’s risk-return profile. On the other hand, Capital Growth Theory focus
 or sequential portfolio selection, aiming to maximize the portfolio’s expected growth rate, or expected log return. While both theories solve the task of portfolio selection, the latter is fitted to the
 “online” scenario, which naturally consists of multiple periods and is the focus of this article.
 
-线上资产组合选择（*OLPS*)，是优化一组资产的财富分配和长期增长的解法问题，是一直以来量化金融和金融工程实践领域的核心。在探索这个问题的道路上，主要形成了两个学派: 其一，基于马科维茨和其所在金融界发展出的均值方差理论。其二，本质起源于信息论的资本增长理论。
-
-在资产管理行业中，众所周知的均值方差理论（*Mean-Variance Theory*）着重于单期（批量）投资组合选择，通过权衡投资组合的预期收益（即，均值）和风险（即，方差），在投资者的风险收益偏好下，构筑最优。另一方面，资本增长理论（*Capital Growth Theory*）侧重于多期或连续投资组合的选择，旨在最大化投资组合的预期增长率或预期对数收益。
-
-虽然这两种理论都解决了投资组合选择的任务，但是对于我们追求的迭代性的投资策略来说，后者更适用这种本质便是连续性决策问题的基本环境。
+线上资产组合选择（*OLPS*)，是优化一组资产的财富分配和长期增长的解法问题，是一直以来量化金融和金融工程实践领域的核心。在探索这个问题的道路上，主要形成了两个学派: 其一，基于马科维茨和其所在金融界发展出的均值方差理论。其二，本质起源于信息论的资本增长理论。在资产管理行业中，众所周知的均值方差理论（*Mean-Variance Theory*）着重于单期（批量）投资组合选择，通过权衡投资组合的预期收益（即，均值）和风险（即，方差），在投资者的风险收益偏好下，构筑最优。另一方面，资本增长理论（*Capital Growth Theory*）侧重于多期或连续投资组合的选择，旨在最大化投资组合的预期增长率或预期对数收益。虽然这两种理论都解决了投资组合选择的任务，但是对于我们追求的迭代性的投资策略来说，后者更适用这种本质便是连续性决策问题的基本环境。
 
 Online portfolio selection, which sequentially selects a portfolio over a set of assets in order to
 achieve certain targets, is a natural and important task for asset portfolio management. Aiming to
@@ -44,6 +40,8 @@ outlines the list of main algorithms and corresponding references.
 通过连续性选择资产池以实现特定风险-回报目标，线上资产组合成为了资产组合管理的自然和核心人物。为了解决这个问题，几大种类的算法
 相继被提出。例如，最经典的“跟随赢家”策略，以资产理论为基石，旨在最大限度靠近大盘中的最优策略的收益增长率（log return）。第二种策略，
 称为“跟随败者”，是一种将资产分配比重由大盘赢家转为败者的策略。这看起来或许有些反直觉，但其逻辑在于败者必将触底反弹，回归均值收益，在实际操作中往往能赢得极高收益。第三种策略，名为“规律套利”，旨在通过历史数据样本来驱动对市场的走势预测，并以此直接优化资产组合。
+
+以上三种策略纵有不同，他们的核心管理思路是相同的————资产组合单策略。有所谓“荟萃分析策略”，便是一种集合多种策略/资产类型为一体的。
 
 This article provides a comprehensive survey of online portfolio selection algorithms belonging
 to the above categories. To the best of our knowledge, this is the first survey that includes the above
