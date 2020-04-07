@@ -12,15 +12,6 @@ for comprehensive comparisons with existing ones.
 
 **1. INTRODUCTION** 
 
-Portfolio selection, aiming to optimize the allocation of wealth across a set of assets, is a fundamental research problem in computational finance and a practical engineering task in financial
-engineering. There are two major schools for investigating this problem, that is, the Mean Variance Theory [Markowitz 1952; Markowitz 1959; Markowitz et al. 2000] mainly from the finance
-community and Capital Growth Theory [Kelly 1956; Hakansson and Ziemba 1995] primarily originated from information theory. The Mean Variance Theory, widely known in asset management
-industry, focuses on a single-period (batch) portfolio selection to trade off a portfolio’s expected
-return (mean) and risk (variance), which typically determines the optimal portfolios subject to the
-investor’s risk-return profile. On the other hand, Capital Growth Theory focuses on multiple-period
-or sequential portfolio selection, aiming to maximize the portfolio’s expected growth rate, or expected log return. While both theories solve the task of portfolio selection, the latter is fitted to the
-“online” scenario, which naturally consists of multiple periods and is the focus of this article.
-
 线上资产组合选择（*OLPS*)，是优化一组资产的财富分配和长期增长的解法问题，是一直以来量化金融和金融工程实践领域的核心。在探索这个问题的道路上，主要形成了两个学派: 其一，基于马科维茨和其所在金融界发展出的均值方差理论。其二，本质起源于信息论的资本增长理论。在资产管理行业中，众所周知的均值方差理论（*Mean-Variance Theory*）着重于单期（批量）投资组合选择，通过权衡投资组合的预期收益（即，均值）和风险（即，方差），在投资者的风险收益偏好下，构筑最优。另一方面，资本增长理论（*Capital Growth Theory*）侧重于多期或连续投资组合的选择，旨在最大化投资组合的预期增长率或预期对数收益。虽然这两种理论都解决了投资组合选择的任务，但是对于我们追求的迭代性的投资策略来说，后者更适用这种本质便是连续性决策问题的基本环境。
 
 Online portfolio selection, which sequentially selects a portfolio over a set of assets in order to
@@ -43,39 +34,10 @@ outlines the list of main algorithms and corresponding references.
 
 以上三种策略纵有不同，他们的核心管理思路是相同的————资产组合单策略。有所谓“荟萃分析策略”，便是一种集合多种策略/资产类型为一体的。
 
-This article provides a comprehensive survey of online portfolio selection algorithms belonging
-to the above categories. To the best of our knowledge, this is the first survey that includes the above
-three categories and the meta-learning algorithms as well. Moreover, we are the first to explicitly
-discuss the connection between the online portfolio selection algorithms and Capital Growth Theory, and illustrate their underlying trading ideas. In the following sections, we also clarify the scope
-of this article and discuss some related existing surveys in the literature.
-
 此文章将在上述策略领域提供一个完整的线上资产组合选择算法回顾。
 
 
 **I.1. SCOPE**
-
-In this survey, we focus on discussing the empirical motivating ideas of the online portfolio
-selection algorithms, while only skimming theoretical aspects (such as competitive
-analysis by El-Yaniv [1998] and Borodin et al. [2000] and asymptotical convergence analysis
-by Gy¨orfi et al. [2012]). Moreover, various other related issues and topics are excluded from this
-survey, as discussed below.
-
-First of all, it is important to mention that the “Portfolio Selection” task in our
-survey differs from a great body of financial engineering studies [Kimoto et al. 1993;
-ACM Computing Surveys, Vol. V, No. N, Article A, Publication date: December YEAR.
-Online Portfolio Selection: A Survey A:3
-Merhav and Feder 1998; Cao and Tay 2003; Lu et al. 2009; Dhar 2011; Huang et al. 2011], which
-attempted to forecast financial time series by applying machine learning techniques and
-conduct single stock trading [Katz and McCormick 2000; Koolen and Vovk 2012], such as reinforcement
-learning [Moody et al. 1998; Moody and Saffell 2001; O et al. 2002], neural networks
-[Kimoto et al. 1993; Dempster et al. 2001], genetic algorithms [Mahfoud and Mani 1996;
-Allen and Karjalainen 1999; Madziuk and Jaruszewicz 2011], decision trees [Tsang et al. 2004],
-and support vector machines [Tay and Cao 2002; Cao and Tay 2003; Lu et al. 2009], boosting
-and expert weighting [Creamer 2007; Creamer and Freund 2007; Creamer and Freund 2010;
-Creamer 2012], etc. The key difference between these existing works and subject area of this survey
-is that their learning goal is to make explicit predictions of future prices/trends and to trade on
-a single asset [Borodin et al. 2000, Section 6], while our goal is to directly optimize the allocation
-among a set of assets.
 
 首先，我们需要将此Survey的“资产组合选择”与其他金融工程的研究主题分离。*ACM Survey*，旨在应用机器学习技巧进行金融
 时间序列的预测，实现单类资产的交易。例如：增强学习，神经网络，基因算法，决策树和支持矢量机，提升和专家配重等。此类
