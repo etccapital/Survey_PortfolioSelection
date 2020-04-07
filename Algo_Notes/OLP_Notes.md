@@ -52,7 +52,7 @@ of this article and discuss some related existing surveys in the literature.
 此文章将在上述策略领域提供一个完整的线上资产组合选择算法回顾。
 
 
-**1.1. Scope**
+**I.1. SCOPE**
 
 In this survey, we focus on discussing the empirical motivating ideas of the online portfolio
 selection algorithms, while only skimming theoretical aspects (such as competitive
@@ -76,6 +76,11 @@ Creamer 2012], etc. The key difference between these existing works and subject 
 is that their learning goal is to make explicit predictions of future prices/trends and to trade on
 a single asset [Borodin et al. 2000, Section 6], while our goal is to directly optimize the allocation
 among a set of assets.
+
+首先，我们需要将此Survey的“资产组合选择”与其他金融工程的研究主题分离。*ACM Survey*，旨在应用机器学习技巧进行金融
+时间序列的预测，实现单类资产的交易。例如：增强学习，神经网络，基因算法，决策树和支持矢量机，提升和专家配重等。此类
+金融工程中的过往论文与此篇survey的关键区别，在于它们的重心是预测未来价格走势以实现单类资产交易，而我们的目的是直接
+在一套资产类别中寻求优化。
 
 Second, this survey emphasizes the importance of “online” decision for portfolio selection,
 meaning that related market information arrives sequentially and the allocation
