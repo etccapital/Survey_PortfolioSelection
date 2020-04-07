@@ -35,15 +35,20 @@ for comprehensive comparisons with existing ones.
 最后，我们将重点探讨资产组合选择的算法面，并给读者一份对现有的资产组合选择策略领域架构性理解。
 
 **OUTLINE**
-*Section 2* formulates the problem of online
-portfolio selection formally and addresses several practical issues. Section 3 introduces the state-
-ACM Computing Surveys, Vol. V, No. N, Article A, Publication date: December YEAR.
-A:4 Li and Hoi
-of-the-art algorithms, including Benchmarks in Section 3.1, the Follow-the-Winner approaches in
-Section 3.2, Follow-the-Loser approaches in Section 3.3, Pattern-Matching based Approaches in
-Section 3.4, and Meta-Learning Algorithms in Section 3.5, etc. Section 4 connects the existing
-algorithms with the Capital Growth Theory and also illustrates the essentials of their underlying
-trading ideas. Section 5 discusses several related open issues, and finally Section 6 concludes this
-survey and outlines some future directions.
+
+*Section 2* 将正式赋予线上资产选择问题的数学定义，并探讨几个重要的实际问题。
+
+*Section 3* 主要介绍产业内的重点算法
+-3.1 基准算法
+-3.2 跟随赢家
+-3.3 跟随败者
+-3.4 规律套利
+-3.5 荟萃学习
+-
+*Section 4* 探讨现有算法与资产增长理论的核心交易理念
+
+*Section 5* 谈论几个领域内的重点问题
+
+*Section 6* 总结与未来方向展望
 
 
