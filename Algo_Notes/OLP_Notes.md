@@ -30,9 +30,7 @@ outlines the list of main algorithms and corresponding references.
 
 通过连续性选择资产池以实现特定风险-回报目标，线上资产组合成为了资产组合管理的自然和核心人物。为了解决这个问题，几大种类的算法
 相继被提出。例如，最经典的“跟随赢家”策略，以资产理论为基石，旨在最大限度靠近大盘中的最优策略的收益增长率（log return）。第二种策略，
-称为“跟随败者”，是一种将资产分配比重由大盘赢家转为败者的策略。这看起来或许有些反直觉，但其逻辑在于败者必将触底反弹，回归均值收益，在实际操作中往往能赢得极高收益。第三种策略，名为“规律套利”，旨在通过历史数据样本来驱动对市场的走势预测，并以此直接优化资产组合。
-
-以上三种策略纵有不同，他们的核心管理思路是相同的————资产组合单策略。有所谓“荟萃分析策略”，便是一种集合多种策略/资产类型为一体的。
+称为“跟随败者”，是一种将资产分配比重由大盘赢家转为败者的策略。这看起来或许有些反直觉，但其逻辑在于败者必将触底反弹，回归均值收益，在实际操作中往往能赢得极高收益。第三种策略，名为“规律套利”，旨在通过历史数据样本来驱动对市场的走势预测，并以此直接优化资产组合。以上三种策略纵有不同，他们的核心管理思路是相同的————资产组合单策略。有所谓“荟萃分析策略”，便是一种集合多种策略/资产类型为一体的。
 
 此文章将在上述策略领域提供一个完整的线上资产组合选择算法回顾。
 
@@ -44,23 +42,9 @@ outlines the list of main algorithms and corresponding references.
 金融工程中的过往论文与此篇survey的关键区别，在于它们的重心是预测未来价格走势以实现单类资产交易，而我们的目的是直接
 在一套资产类别中寻求优化。
 
-Second, this survey emphasizes the importance of “online” decision for portfolio selection,
-meaning that related market information arrives sequentially and the allocation
-decision must be made immediately. Due to the sequential (online) nature of this task,
-we mainly focus on the survey of multi-period/sequential portfolio selection work, in
-which the portfolio is rebalanced to a specified allocation at the end of each trading period
-[Cover 1991], and the goal typically is to maximize the expected log return over a sequence
-of trading periods. We note that these work can be connected to the Capital Growth Theory
-[Kelly 1956], stemmed from the seminal paper of Kelly [1956] and further developed
-by Breiman[1960; 1961], Hakansson[1970; 1971], Thorp[1969; 1971], Bell and Cover [1980],
-Finkelstein and Whitley [1981], Algoet and Cover [1988], Barron and Cover [1988],
-MacLean et al. [1992], MacLean and Ziemba [1999], Ziemba and Ziemba [2007],
-Maclean et al. [2010], etc. It has been successfully applied to gambling [Thorp 1962;
-Thorp 1969; Thorp 1997], sports betting [Hausch et al. 1981; Ziemba and Hausch 1984;
-Thorp 1997; Ziemba and Hausch 2008], and portfolio investment [Thorp and Kassouf 1967;
-Rotando and Thorp 1992; Ziemba 2005]. We thus exclude the studies related to the Mean Variance
-portfolio theory [Markowitz 1952; Markowitz 1959], which were typically developed for singleperiod
-(batch) portfolio selection (except some extensions [Li and Ng 2000; Dai et al. 2010]).
+其次，此文章将重点强调资产组合的“线上”性——也就是，所有相关市场信息相继到来，而任何资产分配决策必须即刻做出。考虑到此，
+我们的文章重点将在于探讨多期、连续的资产组合论文。在此问题下，目标被设定为最大化特定交易区间的log回报，
+而资产组合需要特定交易区间的末期进行调仓。
 
 Finally, this article focuses on surveying the algorithmic aspects and providing a structural understanding
 of the existing online portfolio selection strategies. To prevent loss of focus, we will
