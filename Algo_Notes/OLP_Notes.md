@@ -44,7 +44,7 @@ for comprehensive comparisons with existing ones.
 -3.3 跟随败者
 -3.4 规律套利
 -3.5 荟萃学习
--
+
 *Section 4* 探讨现有算法与资产增长理论的核心交易理念
 
 *Section 5* 谈论几个领域内的重点问题
