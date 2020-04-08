@@ -51,4 +51,28 @@ for comprehensive comparisons with existing ones.
 
 *Section 6* 总结与未来方向展望
 
+**2.1 Problem Setting**
+
+Consider a financial market with m assets, we invest our wealth over all the assets in the market
+for a sequence of n trading periods. The market price change is represented by a m-dimensional
+price relative vector xt ∈ Rm+ , t = 1, . . . , n, where the ith element of tth price relative vector, xt,i,
+denotes the ratio of tth closing price to last closing price for the ith assets. Thus, an investment
+in asset i on period t increases by a factor of xt,i. We also denote the market price changes from
+period t1 to t2 (t2 > t1) by a market window, which consists of a sequence of price relative vectors
+xt2
+t1 = {xt1 , . . . , xt2}, where t1 denotes the beginning period and t2 denotes the ending period. One
+special market window starts from period 1 to n, that is, xn
+1 = {x1, . . . , xn}.
+At the beginning of the tth period, an investment is specified by a portfolio vector bt, t =
+1, . . . , n. The ith element of tth portfolio, bt,i, represents the proportion of capital invested in the
+ith asset. Typically, we assume a portfolio is self-financed and no margin/short is allowed. Thus, a
+portfolio satisfies the constraint that each entry is non-negative and all entries sum up to one, that
+is, bt ∈ m, where m =
+
+b : b  0, b⊤1 = 1
+	
+. Here, 1 is the m-dimensional vector of all 1s,
+and b⊤1 denotes the inner product of b and 1. The investment procedure from period 1 to n is
+represented by a portfolio strategy, which is a sequence of mappings as follows:
+
 
