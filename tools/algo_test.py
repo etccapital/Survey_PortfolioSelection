@@ -20,6 +20,7 @@ def S():
 def test_bias(algo_class, S):
     """ Test forward bias of algo. Test on a portion of given data set, then add several
     data points and see if weights has changed.
+    测试算法的顺向偏见。
     """
     m = 10
     B1 = algo_class().run(S.iloc[:-m]).B
