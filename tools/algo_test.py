@@ -41,7 +41,7 @@ def test_bah(S):
     assert abs(wealth_no_fees * (1 - FEE) - wealth_with_fees) < EPS
 
 
-# CRP
+# CRP 固定收益资产组合
 def test_crp(S):
     """ Make sure that equity of a portfolio [1,0,...,0] with NaN values
     is the same as asset itself. """
