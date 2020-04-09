@@ -75,16 +75,6 @@ b : b  0, b⊤1 = 1
 and b⊤1 denotes the inner product of b and 1. The investment procedure from period 1 to n is
 represented by a portfolio strategy, which is a sequence of mappings as follows:
 
-b1 =
-1
-m
-1, bt : R
-m(t−1)
-+ → m, t = 2, 3, . . . , n,
-where bt = bt
-􀀀
-xt−1
-1
 
 denotes the portfolio computed from the past market window xt−1
 1 . Let us
@@ -92,42 +82,20 @@ denote the portfolio strategy for n periods as bn
 1 = {b1, . . . , bn}.
 For the tth period, a portfoliomanager apportions its capital according to portfolio bt at the opening
 time, and holds the portfolio until the closing time. Thus, the portfolio wealth will increase by a
-factor of b⊤
-t xt =
-Pm
-i=1 bt,ixt,i. Since this model uses price relatives and re-invests the capital, the
+factor of
+
+Since this model uses price relatives and re-invests the capital, the
 portfolio wealth will increase multiplicatively. From period 1 to n, a portfolio strategy bn
 1 increases
 the initial wealth S0 by a factor of
-Qn
-t=1 b⊤
-t xt, that is, the final cumulative wealth after a sequence
+
+, that is, the final cumulative wealth after a sequence
 of n periods is
-Sn (bn
-1 ) = S0
-Yn
-t=1
-b⊤
-t xt = S0
-Yn
-t=1
-Xm
-i=1
-bt,ixt,i.
+
 Since the model assumes multi-period investment, we define the exponential growth rate for a strategy
 bn
 1 as,
-Wn (bn
-1 ) =
-1
-n
-log Sn (bn
-1 ) =
-1
-n
-Xn
-t=1
-log bt · xt.
+
 Finally, let us combine all elements and formulate the online portfolio selection model. In a portfolio
 selection task the decision maker is a portfolio manager, whose goal is to produce a portfolio
 strategy bn
