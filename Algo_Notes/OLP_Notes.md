@@ -53,7 +53,7 @@ for comprehensive comparisons with existing ones.
 
 **2.1 Problem Setting**
 
-Consider a financial market with m assets, we invest our wealth over all the assets in the market
+考虑一个拥有m个资产的金融市场。Consider a financial market with m assets, we invest our wealth over all the assets in the market
 for a sequence of n trading periods. The market price change is represented by a m-dimensional
 price relative vector xt ∈ Rm+ , t = 1, . . . , n, where the ith element of tth price relative vector, xt,i,
 denotes the ratio of tth closing price to last closing price for the ith assets. Thus, an investment
