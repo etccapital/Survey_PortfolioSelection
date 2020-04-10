@@ -12,6 +12,8 @@ From an online machine learning perspective, we ﬁrst formulate online portfoli
 
 **II. OUTLINE**
 
+*Section 1* 线上资产选择问题，及其领域纵览。
+
 *Section 2* 将正式赋予线上资产选择问题的数学定义，并探讨几个重要的实际问题。
 
 *Section 3* 主要介绍产业内的重点算法
