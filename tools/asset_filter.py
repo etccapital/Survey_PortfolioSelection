@@ -40,7 +40,7 @@ class AssetFilter(object):
         if self.window:
             R_log = R_log.iloc[-self.window:]
 
-        # find sharpe ratio without assets
+        # 计算夏普比率
         RR = {'full': R_log.sum(1)}
         for col in R.columns:
             total_ret = R_log.drop(col, 1).sum(1)
@@ -54,7 +54,8 @@ class AssetFilter(object):
 
 
 def filter_result(S, algo, asset_filter=None, result=None):
-    """ Filter assets for algo by their past-performance. """
+    """ Filter assets for algo by their past-performance. 
+        以资产过去表现过滤算法备选资产"""
     result = result or algo.run(S)
     asset_filter = asset_filter or AssetFilter()
 
