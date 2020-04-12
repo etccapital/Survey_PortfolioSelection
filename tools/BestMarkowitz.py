@@ -6,6 +6,7 @@ import numpy as np
 
 class BestMarkowitz(CRP):
     """ Optimal Markowitz portfolio constructed in hindsight.
+    理论意义最佳马科维茨资产组合。作为基准进行比较。
     Reference:
         https://en.wikipedia.org/wiki/Modern_portfolio_theory
     """
