@@ -34,7 +34,7 @@ class AssetFilter(object):
         return to_remove
 
     def fit(self, R, B):
-        # convert it to log returns
+        # 转换为log return
         R_log = np.log(R)
 
         if self.window:
