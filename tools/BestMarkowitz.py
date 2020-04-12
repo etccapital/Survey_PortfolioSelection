@@ -19,10 +19,11 @@ class BestMarkowitz(CRP):
 
     def weights(self, X):
         """ Find optimal markowitz weights. """
-        # update frequency
+        # update frequency 更新频率
         freq = tools.freq(X.index)
 
         # calculate mean and covariance matrix and annualize them
+        # 计算平均值，协方差矩阵并年化。
         mu = X.mean() * freq
         sigma = X.cov() * freq
 
