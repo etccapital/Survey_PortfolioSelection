@@ -33,7 +33,7 @@ From an online machine learning perspective, we ﬁrst formulate online portfoli
 
 In recent years, machine learning has been applied to various applications in finance (Gy¨orfi et al., 2012), including On-line Portfolio Selection, which aims to sequentially allocate capital among a set of assets, such that the investment return can be maximized in the long run (Kelly, 1956). It has attracted increasing attention from both academia and industry, and several machine learning algorithms have been proposed (Li and Hoi, 2014), including traditional algorithms (Cover, 1991; Helmbold et al., 1998; Agarwal et al., 2006; Borodin et al., 2004; Gy¨orfi et al., 2006, 2008), and recent state-of-the-art online learning algorithms (Li et al., 2011, 2012, 2013, 2015). Unlike other application domains in machine learning where various open-source packages are available, very few open-source toolkits exist for on-line portfolio selection, primarily due to the confidential nature of financial industry. Consequently, it is difficult for researchers to evaluate new algorithms for comprehensive comparisons with existing ones.
 
-I. **一些经典策略**
+**I. 一些经典策略**
 
 1. 基准策略*Benchmark*: 是一种追求长期大盘或是获取大盘自筛选性收益形成的算法类型。这种策略的基本假设就是市场有效假说，且大盘长期向上。
 
@@ -53,3 +53,7 @@ I. **一些经典策略**
 在机器学习中，学习，一般指代对特定代价函数的优化，我们最大化贝叶斯模型的似然估计，最小化神经网络中的平均方差，或是最大化增强学习中的期望回报。荟萃学习，则是优化这种机器学习进程的策略。
 
    EX:Aggregating Algorithms，Fast Universalization, Online Gradient Updates, Follow the Leading History.
+   
+**II. Problem Setting.**
+
+![PS_Setting](/images/Problem Setting.PNG)
