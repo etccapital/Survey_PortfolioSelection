@@ -42,14 +42,14 @@ class Algo(object):
         self.frequency = frequency
 
     def init_weights(self, m):
-        """ Set initial weights.
+        """ Set initial weights. 初始化配重
         :param m: Number of assets.
         """
         return np.zeros(m)
 
     def init_step(self, X):
         """ Called before step method. Use to initialize persistent variables.
-        :param X: Entire stock returns history. 
+        :param X: Entire stock returns history. 完整股票回报历史
         """
         pass
 
@@ -57,8 +57,8 @@ class Algo(object):
         """ Calculate new portfolio weights. If history parameter is omited, step
         method gets passed just parameters `x` and `last_b`. This significantly
         increases performance.计算新资产组合配比
-        :param x: Last returns.
-        :param last_b: Last weights.
+        :param x: Last returns.最近回报
+        :param last_b: Last weights.最近配重
         :param history: All returns up to now. You can omit this parameter to increase
             performance.
         """
