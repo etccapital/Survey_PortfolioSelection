@@ -56,4 +56,4 @@ In recent years, machine learning has been applied to various applications in fi
    
 **II. Problem Setting.**
 
-![PS_Setting](/images/Problem Setting.PNG)
+![PS](/images/Problem_Setting.png)
