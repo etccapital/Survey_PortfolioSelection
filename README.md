@@ -56,4 +56,3 @@ In recent years, machine learning has been applied to various applications in fi
    
 **II. Problem Setting.**
 
-![PS](https://github.com/etccapital/Survey_PortfolioSelection/blob/master/images/Problem%20Setting.PNG)
