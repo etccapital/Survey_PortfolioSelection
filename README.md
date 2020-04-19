@@ -1,8 +1,8 @@
 # Survey_PortfolioSelection
 
-Online portfolio selection is a fundamental problem in computational ﬁnance, which has been extensively studied across several research communities, including ﬁnance, statistics, artiﬁcial intelligence, machine learning, and data mining, etc. This article aims to provide a comprehensive survey and a structural understanding of published online portfolio selection techniques.
-
 ![OLP](https://unfall-re.de/wp-content/uploads/2019/04/HIS-NL-1024x540.jpg)
+
+Online portfolio selection is a fundamental problem in computational ﬁnance, which has been extensively studied across several research communities, including ﬁnance, statistics, artiﬁcial intelligence, machine learning, and data mining, etc. This article aims to provide a comprehensive survey and a structural understanding of published online portfolio selection techniques.
 
 **OUTLINE**
 
