@@ -23,7 +23,7 @@ Such, a Security Market Line formed to represent how individual securities are p
 - All firm-specific risk(non-systematic) risk can be diversifed away and thus not priced.
 - All invidual securities are priced based purely on its market risk(as measured in beta/covariance with market), not the total volatility risk. 
 
-基本的CAPM定价模型对任何“非市场择时者”，“选股者”来说是最完美的模型，个人投资者只需要依照自己的风险偏好选取一个风险合理分化的资产组合。
+基本的CAPM定价模型对任何“非市场择时者”，“选股者”来说是最完美的模型，个人投资者只需要依照自己的风险偏好选取一个风险合理分化的资产组合。CAPM严格意义上来说就是一个以market premium，市场风险溢价为因子的单因子模型。
 
 **II. Portfolio Measures: Beta and Alpha**
 
@@ -36,3 +36,4 @@ Such, a Security Market Line formed to represent how individual securities are p
 - Momentum: As stocks that either underperformed or outperformed the market tend to have some market lags, such past performance exhibits strength or weakness going forward. A momentum strategy can look at the respective market window on weekly, monthly or even yearly basis.
 
 - Quality: Another factor that tracks core ratio in fundamental analysis. As quality is defined by low debt, stable earnings, consistent asset growth, and strong corporate governance. Common financial metrics such as return to equity, debt to equity and earnings variability can be used to track quality factor. 
+
