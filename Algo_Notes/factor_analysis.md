@@ -4,7 +4,7 @@
 
   Core Assumptions:
 - Investors are risk-averse, utility maximizing, rational.
-- Choices are based on expected return and normality.
+- Choices are based on expected risk, return and normality.
 - One period market window.
 - Homogenous outlook, no private information.
 - Borrow and lend at risk-free rate.
@@ -24,3 +24,7 @@ Such, a Security Market Line formed to represent how individual securities are p
 - All invidual securities are priced based purely on its market risk(as measured in beta/covariance with market), not the total volatility risk. 
 
 基本的CAPM定价模型对任何“非市场择时者”，“选股者”来说是最完美的模型，个人投资者只需要依照自己的风险偏好选取一个风险合理分化的资产组合。
+
+**II. Portfolio Measures: Beta and Alpha**
+
+**III. Fundamental: Factor Basics**
