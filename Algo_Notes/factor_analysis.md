@@ -31,8 +31,8 @@ Such, a Security Market Line formed to represent how individual securities are p
 
 - Value: mostly track core ratios in fundamental analysis, aims to capture excess returns from stocks that have low prices relative to their fundamental value. Commonly tracked by price to book, price to earnings, dividends, and free cash flow. 
   
-Size: Market capitalization in some way levy upper limits on the long term growth of the stock. Small-cap stocks that survived and prospered outperformed those of lower risk large cap stocks. 
+- Size: Market capitalization in some way levy upper limits on the long term growth of the stock. Small-cap stocks that survived and prospered outperformed those of lower risk large cap stocks. 
 
-Momentum: As stocks that either underperformed or outperformed the market tend to have some market lags, such past performance exhibits strength or weakness going forward. A momentum strategy can look at the respective market window on weekly, monthly or even yearly basis.
+- Momentum: As stocks that either underperformed or outperformed the market tend to have some market lags, such past performance exhibits strength or weakness going forward. A momentum strategy can look at the respective market window on weekly, monthly or even yearly basis.
 
-Quality: Another factor that tracks core ratio in fundamental analysis. As quality is defined by low debt, stable earnings, consistent asset growth, and strong corporate governance. Common financial metrics such as return to equity, debt to equity and earnings variability can be used to track quality factor. 
+- Quality: Another factor that tracks core ratio in fundamental analysis. As quality is defined by low debt, stable earnings, consistent asset growth, and strong corporate governance. Common financial metrics such as return to equity, debt to equity and earnings variability can be used to track quality factor. 
