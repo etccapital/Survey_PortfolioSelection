@@ -76,14 +76,30 @@ Possible factors:
 - Extracted Factors: Market Portfolio, Industry Averages, ...
 
 
-**V. Fama & French "Three-Factor Model"**
+**V. Fama & French Three-Factor Model (1993, 1996)**
 
-![SML Equation](https://latex.codecogs.com/svg.latex?R_i_t-R_f_t=\alpha_i+\beta_i_M(R_M_t-R_f_t)+\beta_i_sSMB_t+\beta_h_iHML_t+e_i_t)
+![SML Equation](https://latex.codecogs.com/svg.latex?R_i_t-R_f_t=\alpha_i+\beta_i_M(R_M_t-R_f_t)+\beta_i_sSMB_t+\beta_i_hHML_t+e_i_t)
 
 Where：
 
-SMB is "Small Minus Big" size premium 市值因子
+SMB is "Small Minus Big" size risk 市值因子
 
-HML is "High Minus Low" value premium 账面市值比（B/M）因子
+HML is "High Minus Low" value risk 账面市值比（B/M）因子
 
+**VI. Carhart Four-Factor Model (1997)**
 
+![SML Equation](https://latex.codecogs.com/svg.latex?R_i_t-R_f_t=\alpha_i+\beta_i_M(R_M_t-R_f_t)+\beta_i_sSMB_t+\beta_i_hHML_t+\beta_i_uUMD_t+e_i_t)
+
+Where:
+
+UMD is "Up Minus Down" momentum risk 动量因子
+
+**VII. Fama & French Five-Factor Model (2015,2016)**
+
+![SML Equation](https://latex.codecogs.com/svg.latex?R_i_t-R_f_t=\alpha_i+\beta_i_M(R_M_t-R_f_t)+\beta_i_sSMB_t+\beta_i_hHML_t+\beta_i_rRMW_t+\beta_i_cCMA_t+e_i_t)
+
+Where:
+
+RMW is "Robust Minus Weak" operating profitablity risk 盈利水平因子
+
+CMA is "Conservative Minus Aggressive" investment risk 投资水平因子
