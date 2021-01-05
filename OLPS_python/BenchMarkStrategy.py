@@ -22,7 +22,7 @@ class BS(Strategy):
     def run(self, df:pd.DataFrame):
         ret_to_col = dict()
         for col in df.columns:
-            cumret = math.prod(df[col].values)
+            cumret = np.prod(df[col].values)
             ret_to_col[cumret] = col
         best_stock = ret_to_col[max(ret_to_col)]
         return OLPSResult(df[best_stock])
@@ -60,7 +60,7 @@ class BCRP(Strategy):
         pass
     def run(self, df:pd.DataFrame):
     #Set up constrained optimization
-        func = lambda w:-math.prod(np.matmul(df.to_numpy(), w))
+        func = lambda w:-np.prod(np.matmul(df.to_numpy(), w))
         cons = [{'type': 'eq',
                  'fun': lambda w: np.array([sum(w)-1])},
                 {'type': 'ineq',
