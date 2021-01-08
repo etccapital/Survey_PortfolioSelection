@@ -9,6 +9,8 @@ import OLPSResult as olps
 from varname import nameof
 import copy
 from xone import calendar
+from PAMR import PAMR
+work_dir = "D:/OLPS/Survey_PortfolioSelection/OLPS_python/"
 
 #create a DatetimeIndex with all trading days from start_date to end_date
 def business_dates(start_date:str, end_date:str):
@@ -38,7 +40,7 @@ if __name__ == "__main__":
     # df_nyseo = pd.read_excel("Datasets/nyse-o.xlsx")
     # df_nysen = pd.read_excel("Datasets/nyse-n.xlsx")
     # df_tse = pd.read_excel("Datasets/tse.xlsx")
-    df_sp500 = pd.read_excel("Datasets/sp500.xlsx")
+    df_sp500 = pd.read_excel(work_dir+"Datasets\\sp500.xlsx", engine='openpyxl')
     # df_msci = pd.read_excel("Datasets/msci.xlsx")
     # df_djia = pd.read_excel("Datasets/djia.xlsx")
 
@@ -57,5 +59,6 @@ if __name__ == "__main__":
     portfolio = [1/df_sp500.shape[1] for i in range(num_stocks)]
     #a list of all strategies to be tested
     strats = [ bms.CRP(portfolio), bms.BS(), bms.BCRP()]
+    strats.append(PAMR())
     #compare them on S&P500
     compare_strats(strats, df_sp500, df_name=df_name, print_option=True,plot_option=True )

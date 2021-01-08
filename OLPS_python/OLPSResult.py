@@ -8,9 +8,10 @@ from copy import copy
 #can be used for storing/printing important information & plotting
 class OLPSResult:
     #daily_ret is the relative return of each day
-    def __init__(self, daily_ret: pd.Series):
+    def __init__(self, daily_ret: pd.Series, elap_time=None):
         self.timerange = daily_ret.index #a list of times(DatetimeIndex obj)
         self.daily_rets = daily_ret.values #an array of daily return values
+        self.elap_time = elap_time #the time it takes for this strategy to execute
     def __str__(self):
         return "Time Range: {} to {}\n".format(self.timerange[0].strftime("%Y-%m-%d"), self.timerange[-1].strftime("%Y-%m-%d")) + \
                "Final Value: {:.4}\n".format(self.getCumRets()[-1]) + \
