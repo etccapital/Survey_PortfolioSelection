@@ -31,7 +31,6 @@ class FollowtheLoser(Strategy):
     def projection_altenrative(self, weight:np.array, N):
         #Initialize 
         C = hp.numpy_to_cvxopt_matrix(np.eye(N,N))
-
         d = hp.numpy_to_cvxopt_matrix(weight)
         
         lb = np.zeros(N)

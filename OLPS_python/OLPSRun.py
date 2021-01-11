@@ -1,4 +1,5 @@
 #This is the main interface
+from CWMR import CWMR
 import numpy as np
 import pandas as pd
 from pandas.tseries.offsets import *
@@ -58,7 +59,7 @@ if __name__ == "__main__":
     num_stocks = df_sp500.shape[1]
     portfolio = [1/df_sp500.shape[1] for i in range(num_stocks)]
     #a list of all strategies to be tested
-    strats = [ bms.CRP(portfolio), bms.BS(), bms.BCRP()]
-    strats.append(PAMR())
+    strats = [bms.CRP(portfolio), bms.BS(), bms.BCRP()]
+    strats.append(CWMR(type='std'))
     #compare them on S&P500
     compare_strats(strats, df_sp500, df_name=df_name, print_option=True,plot_option=True )

@@ -16,6 +16,8 @@ def checkvalidport(port:list):
 def uniform_port(n:int):
     return np.array([1/n for i in range(n)])
 def numpy_to_cvxopt_matrix(A):
+    if not isinstance(A, np.double): 
+        A = A.astype(np.double)
     if A is None:
         return A
     if isinstance(A, np.ndarray):
