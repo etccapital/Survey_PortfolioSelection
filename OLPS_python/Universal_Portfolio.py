@@ -88,8 +88,9 @@ class UP(Strategy):
                 update_port = getUniversalWeight(df.to_numpy()[:i])
             
             # normalize the constraint
+            sums = sum(update_port)
             for j in range(num_cols):
-                update_port[j] = update_port[j]/sum(update_port)
+                update_port[j] = update_port[j]/sums
             if not hp.isvalidport(update_port): raise Exception("Not a valid portfolio!")
             
             day_i_ret = np.matmul(df.to_numpy()[i], update_port)
