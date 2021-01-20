@@ -18,16 +18,7 @@ class FollowtheLoser(Strategy):
         pass
     def expert(self):
         pass
-    def simplex_projection(self, v, b):
-        if b < 0:
-            raise Exception(f"\nRadius of simplex is negative: {b}")
-        
-        v [v<0] = 0  
-        u = np.sort(v)[::-1]
-        sv = np.cumsum(u)
-        #rho = 
-        theta = max(0, )
-        w = max(v-theta, 0)
+
     def projection_altenrative(self, weight:np.array, N):
         #Initialize 
         C = hp.numpy_to_cvxopt_matrix(np.eye(N,N))
@@ -50,35 +41,8 @@ class FollowtheLoser(Strategy):
         Aeq = matrix(Aeq,(1,Aeq.size[0]),'d')
         solvers.options['show_progress'] = False
         soln = solvers.qp(Q, q.T, A, b, Aeq, beq, None, None)
-        x = np.array(soln['x']).reshape(25,)
-        #x[x < 0.000001] = 0
+        
+        x = np.array(soln['x']).reshape(N,)
+
         return x
         
-            
-# weight =
-
-#     0.0000
-#     0.0000
-#     0.0000
-#     0.0000
-#     0.0000
-#     0.0000
-#     0.0000
-#     0.0000
-#     0.0000
-#     0.0000
-#     0.0000
-#     0.0000
-#     0.0000
-#     0.0000
-#     0.0000
-#     0.3812
-#     0.0000
-#     0.0000
-#     0.0000
-#     0.0000
-#     0.2981
-#     0.0000
-#     0.3207
-#     0.0000
-#     0.0000

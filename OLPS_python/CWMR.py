@@ -19,8 +19,6 @@ class CWMR(FollowtheLoser):
         
         
     def name(self):
-        name = "Confidence Weighted Mean Reversion"
-
         name = "Confidence Weighted Mean Reversion-" + str(self.type)
         return name
     def abbr(self): #abbreviation
@@ -82,13 +80,13 @@ class CWMR(FollowtheLoser):
             mu = mu - lamb * np.matmul(sigma, (data[T-1, :].T - x_bar * np.ones(N) ).T )
             sqrtu = (-lamb * self.phi * V + math.sqrt((lamb ** 2 ) * (V ** 2)* (self.phi ** 2) + 4 * V ))/2
             if sqrtu !=0:
-                check = np.linalg.inv(sigma)
+                
                 matr = np.linalg.inv(sigma)  + lamb * self.phi / sqrtu * np.power(np.diag(data[T-1, :]),2) 
                 matr = matr.astype(float)
                 sigma = np.linalg.inv(matr)
         else:
             mu = mu - lamb * np.matmul(sigma, (data[T-1, :].T - x_bar * np.ones(N)).T)
-            check = np.linalg.inv(sigma)
+            
             matr = np.linalg.inv(sigma)  + 2 * lamb * self.phi * np.power(np.diag(data[T-1, :]),2) 
             matr = matr.astype(float)
             sigma = np.linalg.inv(matr)
