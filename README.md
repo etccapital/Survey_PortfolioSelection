@@ -4,7 +4,7 @@
 
 Online portfolio selection is a fundamental problem in computational ﬁnance, which has been extensively studied across several research communities, including ﬁnance, statistics, artiﬁcial intelligence, machine learning, and data mining, etc. This article aims to provide a comprehensive survey and a structural understanding of published online portfolio selection techniques.
 
-Contributor: Victor Xiao, Dustin Yu, Yanpeng Wang, John Zhou, Polo Li, Joanne Wu, Kevin Wang, Jason Ji
+Contributor: Victor Xiao, Dustin Yu, Yanpeng Wang, John Zhou, Polo Li, Joanne Wu, Kevin Wang, Jason Ji (Random Order)
 
 **OUTLINE**
 
